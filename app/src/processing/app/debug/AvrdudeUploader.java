@@ -244,6 +244,9 @@ public class AvrdudeUploader extends Uploader  {
     
     if (programmerPreferences.get("delay") != null)
       params.add("-i" + programmerPreferences.get("delay"));
+
+    if (programmerPreferences.get("extended") != null)
+      params.add("-x" + programmerPreferences.get("extended"));
     
     return params;
   }
